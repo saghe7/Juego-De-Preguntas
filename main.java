@@ -105,8 +105,8 @@ public class main {
 			FileWriter Write = new FileWriter("C:\\Users..."/*Ruta del archivo de puntajes*/, true/*para que no borre y escriba sobre lo que ya este escrito en el archivo*/);
 			Write.write("\n" + "Nombre: " + nombre + " Puntaje: " + puntaje);
 			Write.close();
-		} catch (Exception e) {
-			System.out.println("error al agregar el nombre a la base de datos");
+		} catch (IOException e) {
+			e.printStackTrace();;
 		}
 		//Se muestran los puntajes anteriores
 		try {
@@ -119,8 +119,8 @@ public class main {
 			}
 			
 			Reader.close();
-		} catch (Exception e) {
-			System.out.println("error al agregar el nombre a la base de datos");
+		} catch (IOException e) {
+			e.printStackTrace();;
 		}
 	}
 
