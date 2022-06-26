@@ -120,7 +120,7 @@ public class main {
 			
 			Reader.close();
 		} catch (Exception e) {
-			// TODO: handle exception
+			System.out.println("error al agregar el nombre a la base de datos");
 		}
 	}
 
